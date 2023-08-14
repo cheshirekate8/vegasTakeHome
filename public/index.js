@@ -49,7 +49,6 @@ loadHotels();
 async function loadHotel(name) {
   const response = await fetch(`/api/hotels/${name}`);
   const hotel = await response.json();
-  console.log(hotel);
 
   const image = document.querySelector(".product-image");
   image.setAttribute("src", hotel.media[0].href);
