@@ -1,10 +1,74 @@
-<html>
-    <head>
-
-    </head>
-    <body>
-        <h4>Welcome!</h4>
-
-        If you are here, then you are ready to start coding the example!
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta name="description" content="Put your description here." />
+    <title>Katie Young - Vegas.com Take Home Project</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/da68b56182.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="return-link" href="">
+          <i class="fas fa-chevron-circle-left"></i>
+          SEE ALL LAS VEGAS HOTELS
+      </div>
+      <div class="columns">
+        <div class="left">
+          <img class="product-image" src="" />
+          <ul class="hotels-list"></ul>
+        </div>
+        <div class="right">
+          <div class="info-grid">
+            <div class="section-1">
+              <div class="title"></div>
+              <div class="rating"></div>
+            </div>
+            <div class="section-2">
+              <div class="address"></div>
+              <div class="phone"></div>
+              <div class="guarantee">
+                <i class="fas fa-thumbs-up"></i>
+                Best Price Guarantee
+              </div>
+            </div>
+            <div class="price"></div>
+            <nav class="tabs">
+              <a href="#" class="tab-link" data-tab="description"
+                >Description</a
+              >
+              <a href="#" class="tab-link" data-tab="details">Details</a>
+              <a href="#" class="tab-link" data-tab="location">Location</a>
+            </nav>
+          </div>
+          <div class="tab-content" id="description">
+            <p class="description"></p>
+            <button class="expand-desc">
+                <span class="show-hide-desc">Click</span>
+                <i class="fas fa-chevron-circle-down up-down-icon-desc"></i>
+            </button>
+          </div>
+          <div class="tab-content hidden" id="details">
+            <ul class="details"></ul>
+            <button class="expand-det">
+                <span class="show-hide-det">Click</span>
+                <i class="fas fa-chevron-circle-down up-down-icon-det"></i>
+            </button>
+          </div>
+          <div class="tab-content hidden" id="location">
+            <div class="map-address"></div>
+            <img class="map-image" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
