@@ -150,12 +150,14 @@ async function loadHotel(name) {
     }
   });
 
-  const location = document.getElementById("location");
   const mapAddress = document.querySelector(".map-address");
   const mapImage = document.querySelector(".map-image");
   mapAddress.innerHTML = `<i class="fa fa-map-marker"></i> ${hotel.location.address}, ${hotel.location.city}, ${hotel.location.state} ${hotel.location.postalCode}`;
   mapImage.setAttribute("src", hotel.media[1].href);
-  mapImage.setAttribute("alt", `A map of the ${hotel.name} hotel and surrounding streets`);
+  mapImage.setAttribute(
+    "alt",
+    `A map of the ${hotel.name} hotel and surrounding streets`
+  );
 }
 
 loadHotel("venetian");
